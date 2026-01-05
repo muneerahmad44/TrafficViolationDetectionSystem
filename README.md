@@ -1,13 +1,68 @@
-# TrafficViolationDetectionSystem
+# 🚦 Traffic Violation Detection System
 
-Instructions to rebuild:
+An AI-powered system for detecting traffic violations using YOLOv11s, focusing on helmet detection and license plate recognition.
 
-- if you have ur own test video or a stream from camera you can udate the path in main.py 
--cd to the folder "TrafficViolationDetectionSystem" and run this commadn from ther terminal "PYTHONPATH=. python3 main.py" and it will save the output video to the same folder 
+---
 
-- future work is to extract no pate save in database and generate and e challan for that registered car 
-- to improve the performance of the hekemt detection and number pate detection 
-- to integrate multiple cctv cameras and use gpus and real time cctv camera stream to get the resullts 
-llimitations are that now it is only tested on the video given in the ysstem due to limited resources 
--for model trainin yolo11s is fintuned on a dataset acquired in 2016 in myanmar it was a labeed dataset from mynamar 
-- you can also see the flow digram of the system for the underdstanding of the system 
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+https://github.com/muneerahmad44/TrafficViolationDetectionSystem.git
+cd TrafficViolationDetectionSystem
+```
+
+### Usage
+
+1. **Update video path** in `main.py` with your test video or camera stream
+2. **Run the system:**
+
+```bash
+PYTHONPATH=. python3 main.py
+```
+
+The output video will be saved in the same folder.
+
+---
+
+## 📊 System Flow Diagram
+
+For a detailed understanding of the system architecture and workflow, check out the flow diagram [https://github.com/muneerahmad44/TrafficViolationDetectionSystem/blob/main/flowchart/completeflow.png]
+
+---
+
+## 🤖 Model Details
+
+- **Model:** YOLOv11s (fine-tuned)
+- **Dataset:** Labeled dataset from Myanmar (2016)
+- **Training:** Fine-tuned for helmet detection and number plate recognition
+
+---
+
+## 🔮 Future Work
+
+- Extract number plates and save in database
+- Generate e-challan for registered vehicles
+- Improve helmet detection and number plate recognition performance
+- Integrate multiple CCTV cameras with GPU support
+- Add real-time CCTV camera stream processing
+
+---
+
+## ⚠️ Current Limitations
+
+- Tested only on the provided video due to limited resources
+- Single video source processing
+- No database integration yet
+- Requires adequate computational resources for optimal performance
+
+---
+
+## 📝 License
+
+MIT License
+
+---
+
+**Built with ❤️ using YOLOv11s**
