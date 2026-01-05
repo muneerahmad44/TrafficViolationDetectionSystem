@@ -9,14 +9,11 @@ An advanced AI-powered system for automated traffic enforcement, specializing in
 ### Intelligent Motorcycle Monitoring
 - **Video-based detection system** capable of identifying and tracking moving motorcycles in real-time
 - **Advanced classification engine** supporting 35+ predefined helmet configuration classes for comprehensive rider-passenger scenarios
-- **Smart post-classification association logic** that accurately links detected helmet configurations with corresponding motorcycles using:
-  - Spatial relationship analysis
-  - Motion-based tracking cues
-  - Multi-object correlation algorithms
+- **Smart post-classification association logic** that accurately links detected helmet configurations with corresponding motorcycles using
+  
 
 ### Conditional Enforcement Pipeline
 - **Selective license plate detection** triggered only for non-compliant or rule-violating configurations
-- **Automated violation flagging** to support traffic enforcement workflows
 - **Configurable detection logic** for testing and production environments
 
 ---
