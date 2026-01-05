@@ -10,7 +10,6 @@ An advanced AI-powered system for automated traffic enforcement, specializing in
 - **Video-based detection system** capable of identifying and tracking moving motorcycles in real-time
 - **Advanced classification engine** supporting 35+ predefined helmet configuration classes for comprehensive rider-passenger scenarios
 - **Smart post-classification association logic** that accurately links detected helmet configurations with corresponding motorcycles using
-  
 
 ### Conditional Enforcement Pipeline
 - **Selective license plate detection** triggered only for non-compliant or rule-violating configurations
@@ -82,11 +81,11 @@ For a comprehensive understanding of the system architecture, processing pipelin
 
 ## 🤖 Model Details
 
-- **Architecture:** YOLOv11s (Small variant, fine-tuned)
-- **Primary Task:** Helmet detection and classification
-- **Secondary Task:** License plate recognition
+- **Architecture:** YOLOv11s (Small variant)
+- **Primary Task:** Helmet detection and classification (fine-tuned YOLOv11s)
+- **Secondary Task:** License plate recognition (separate fine-tuned YOLOv11s)
 - **Dataset:** Labeled motorcycle dataset from Myanmar (2016)
-- **Training Strategy:** Transfer learning with fine-tuning on domain-specific data
+- **Training Strategy:** Transfer learning with fine-tuning on domain-specific data for both tasks
 - **Classification Categories:** 35+ distinct helmet configuration classes covering:
   - Single rider scenarios
   - Rider-passenger combinations
@@ -107,6 +106,7 @@ For a comprehensive understanding of the system architecture, processing pipelin
 - Integration with vehicle registration databases
 - Notification system for vehicle owners
 
+---
 
 ## ⚠️ Current Limitations
 
@@ -124,11 +124,14 @@ For a comprehensive understanding of the system architecture, processing pipelin
 ### Minimum Requirements
 - Python 3.8+
 - 8GB RAM
-- CUDA-compatible GPU (recommended) can also be runed on the cpu but fps is very low
+- CUDA-compatible GPU (recommended) can also be run on the CPU but fps is very low
 - OpenCV 4.x
 - YOLOv11 dependencies
 
-
+### Recommended Specifications
+- GPU with 6GB+ VRAM for real-time processing
+- 16GB+ RAM for multi-stream handling
+- SSD storage for faster I/O operations
 
 ---
 
